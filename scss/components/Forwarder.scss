@@ -1,0 +1,42 @@
+.Forwarder {
+  .row {
+    .ForwarderLeft {
+      align-self: center;
+
+      h1 {
+        color: var(--primary);
+      }
+    }
+
+    .ForwarderRight {
+      img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .Forwarder {
+    .row {
+      .ForwarderLeft {
+        order: 2;
+        margin-bottom: 30px;
+        padding: 30px;
+      }
+
+      .ForwarderRight {
+        margin-bottom: 30px;
+        img {
+          box-shadow: none;
+          border-radius: 0px;
+          max-height: 300px;
+        }
+        order: 1;
+        padding: 0px;
+      }
+    }
+  }
+}

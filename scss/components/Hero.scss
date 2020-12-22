@@ -1,0 +1,72 @@
+.Hero {
+  .heroRightImage {
+    background-image: url("../src/images/Hero/hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    min-height: 500px;
+  }
+  .heroLeftSide {
+    padding-right: 150px;
+    align-self: center;
+
+    h4 {
+      color: var(--primary);
+    }
+  }
+
+  span {
+    color: var(--primary);
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .Hero {
+    .heroLeftSide {
+      padding-right: 0px;
+      padding: 20px;
+    }
+    .heroRightImage {
+      clip-path: none;
+      min-height: 200px;
+    }
+
+    .row {
+      flex-direction: column-reverse;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .Hero {
+    .heroLeftSide {
+      padding: 0px;
+      padding-right: 50px;
+    }
+
+    .heroRightImage {
+      clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+      min-height: 500px;
+    }
+
+    .row {
+      flex-direction: row;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+  }
+}

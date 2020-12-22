@@ -1,18 +1,24 @@
 {
-  "name": "sowaexpert",
-  "version": "0.1.0",
+  "name": "sowa.expert",
+  "homepage": "https://sowa.expert/",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.2.2",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "macy": "^2.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet-async": "^1.0.7",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start & sass --watch scss/App.scss src/App.css --style compressed",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

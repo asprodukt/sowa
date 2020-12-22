@@ -1,0 +1,50 @@
+.Benefits {
+  text-align: center;
+  .BenefitsIcons {
+    .BenefitsItem {
+      img {
+        height: 64px;
+        width: auto;
+        margin-bottom: 15px;
+        color: red;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .Benefits {
+    text-align: center;
+    h1 {
+      margin-bottom: 20px;
+    }
+    .BenefitsIcons {
+      .BenefitsItem {
+        margin-bottom: 15px;
+        img {
+          height: 48px;
+          width: auto;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .Benefits {
+    text-align: center;
+    h1 {
+      margin-bottom: 100px;
+    }
+    .BenefitsIcons {
+      .BenefitsItem {
+        img {
+          height: 64px;
+          width: auto;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

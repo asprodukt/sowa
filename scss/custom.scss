@@ -1,0 +1,10 @@
+// Override bootstrap
+
+$theme-colors: (
+    "light": #F7F9FA,
+    "primary": #0651A0,
+    "white": white
+);
+
+// Add bootsrap
+@import "../node_modules/bootstrap/scss/bootstrap";

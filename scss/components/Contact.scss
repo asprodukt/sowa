@@ -1,0 +1,69 @@
+.Contact {
+  .ContactLeft {
+    background-image: url("../src/images/Contact/contact.jpg");
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 700px;
+
+    h1 {
+      color: white;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    h3 {
+      color: white;
+      font-size: 22px;
+    }
+
+    p {
+      color: #aaa;
+    }
+
+    a {
+      color: #aaa;
+    }
+  }
+
+  .ContactRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  .Contact {
+    .ContactLeft {
+      min-height: 500px;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+  .Contact {
+    .ContactLeft {
+      padding: 30px;
+    }
+    .ContactRight {
+      padding: 30px;
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+}
