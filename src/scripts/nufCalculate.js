@@ -11,15 +11,11 @@ export function loadDefaultValues() {
   document.getElementById("koszt-wody-netto").value = 5.07;
   document.getElementById("koszt-zrzutow-sciekow-netto").value = 8.02;
   document.getElementById("koszt-ogrzewania-netto").value = 62.26;
+  document.getElementById("kwota-roczna-z-odzysku-wody").value = 62356.31;
   document.getElementById(
-    "wartosc-roczna-odzysku-wod-poplucznych"
-  ).value = 62356.31;
-  document.getElementById(
-    "wartosc-roczna-odzysku-energii-cieplnej"
+    "kwota-roczna-z-odzysku-energii-cieplnej"
   ).value = 19835.64;
-  document.getElementById(
-    "roczne-oszczednosci-z-odzysku-wod-poplucznych"
-  ).value = 79191.94;
+  document.getElementById("suma-rocznych-oszczednosci").value = 79191.94;
 }
 
 export function nufCalculate() {
@@ -55,14 +51,14 @@ export function nufCalculate() {
     "koszt-zrzutow-sciekow-netto"
   );
   var kosztOgrzewaniaNetto = document.getElementById("koszt-ogrzewania-netto");
-  var wartoscRocznaOdzyskuWodPoplucznych = document.getElementById(
-    "wartosc-roczna-odzysku-wod-poplucznych"
+  var kwotaRocznaZOdzyskuWody = document.getElementById(
+    "kwota-roczna-z-odzysku-wody"
   );
-  var wartostRocznaOdzyskuEnergiiCieplnej = document.getElementById(
-    "wartosc-roczna-odzysku-energii-cieplnej"
+  var kwotaRocznaZOdzyskuEnergiiCieplnej = document.getElementById(
+    "kwota-roczna-z-odzysku-energii-cieplnej"
   );
-  var roczneOszczednosciZOdzyskuWodPoplucznych = document.getElementById(
-    "roczne-oszczednosci-z-odzysku-wod-poplucznych"
+  var sumaRocznychOszczednosci = document.getElementById(
+    "suma-rocznych-oszczednosci"
   );
 
   // const kosztyEksploatacyjne = document.getElementById("koszty-eksploatacyjne")! as HTMLInputElement;
@@ -119,26 +115,25 @@ export function nufCalculate() {
     "pl-PL",
     { maximumFractionDigits: 3 }
   );
-  var wartoscRocznaOdzyskuWodPoplucznychValue =
+  var kwotaRocznaZOdzyskuWodyValue =
     roczneZuzycieWodyValue *
     (+kosztWodyNetto.value + +kosztZrzutowSciekowNetto.value) *
-    0.8;
-  wartoscRocznaOdzyskuWodPoplucznych.value = wartoscRocznaOdzyskuWodPoplucznychValue.toLocaleString(
+    0.96;
+  kwotaRocznaZOdzyskuWody.value = kwotaRocznaZOdzyskuWodyValue.toLocaleString(
     "pl-PL",
     { maximumFractionDigits: 2 }
   );
-  var wartostRocznaOdzyskuEnergiiCieplnejValue =
-    +kosztOgrzewaniaNetto.value * +roczneZuzycieEnergiiCieplnejValue * 0.8;
-  wartostRocznaOdzyskuEnergiiCieplnej.value = wartostRocznaOdzyskuEnergiiCieplnejValue.toLocaleString(
+  var kwotaRocznaZOdzyskuEnergiiCieplnejValue =
+    +kosztOgrzewaniaNetto.value * +roczneZuzycieEnergiiCieplnejValue * 0.96;
+  kwotaRocznaZOdzyskuEnergiiCieplnej.value = kwotaRocznaZOdzyskuEnergiiCieplnejValue.toLocaleString(
     "pl-PL",
     { maximumFractionDigits: 2 }
   );
-  roczneOszczednosciZOdzyskuWodPoplucznych.value = (
-    wartoscRocznaOdzyskuWodPoplucznychValue +
-    +wartostRocznaOdzyskuEnergiiCieplnejValue
+  sumaRocznychOszczednosci.value = (
+    kwotaRocznaZOdzyskuWodyValue + +kwotaRocznaZOdzyskuEnergiiCieplnejValue
   ).toLocaleString("pl-PL", { maximumFractionDigits: 2 });
   // var roczneOplatyZaMedia :number = (+roczneZuzycieWody.value * (+kosztWodyNetto.value + +kosztZrzutowSciekowNetto.value) + (+roczneZuzycieEnergiiCieplnej.value * +kosztOgrzewaniaNetto.value))
   // miesieczneOplatyZaMedia.value = round(roczneOplatyZaMedia/12, 2).toLocaleString('pl-PL', {maximumFractionDigits: 2});
-  // miesieczneOszczednosci.value = round(+roczneOszczednosciZOdzyskuWodPoplucznych.value / 12, 2).toLocaleString('pl-PL', {maximumFractionDigits: 2});
+  // miesieczneOszczednosci.value = round(+sumaRocznychOszczednosci.value / 12, 2).toLocaleString('pl-PL', {maximumFractionDigits: 2});
   // roznicaNaPlusMiesiecznie.value = round(+miesieczneOszczednosci.value - +miesiecznaRataZaSystem.value, 2).toLocaleString('pl-PL', {maximumFractionDigits: 2})
 }

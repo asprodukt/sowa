@@ -372,15 +372,13 @@ export default class Calculator extends Component {
               </div>
             </div>
             <div className="form-row">
-              <h3 className="my-5">
-                Roczne oszczędności obliczone zgodnie z normą DIN 19645
-              </h3>
+              <h3 className="my-5">Suma rocznych oszczędności</h3>
             </div>
 
             <div className="form-row">
               <div className="col-md-6">
-                <label htmlFor="wartosc-roczna-odzysku-wod-poplucznych">
-                  Wartość roczna odzysku wód popłucznych
+                <label htmlFor="kwota-roczna-z-odzysku-wody">
+                  Kwota roczna z odzysku wody
                 </label>
                 <div className="input-group mb-3">
                   <input
@@ -388,31 +386,31 @@ export default class Calculator extends Component {
                     disabled
                     className="form-control"
                     aria-label="Koszt wody netto"
-                    aria-describedby="wartosc-roczna-odzysku-wod-poplucznych"
-                    id="wartosc-roczna-odzysku-wod-poplucznych"
-                    name="wartosc-roczna-odzysku-wod-poplucznych"
+                    aria-describedby="kwota-roczna-z-odzysku-wody"
+                    id="kwota-roczna-z-odzysku-wody"
+                    name="kwota-roczna-z-odzysku-wody"
                   />
                   <div className="input-group-append">
-                    <span className="input-group-text">PLN/rok</span>
+                    <span className="input-group-text">PLN</span>
                   </div>
                 </div>
               </div>
               <div className="col-md-6">
-                <label htmlFor="wartosc-roczna-odzysku-energii-cieplnej">
-                  Wartość roczna odzysku energii cieplnej
+                <label htmlFor="kwota-roczna-z-odzysku-energii-cieplnej">
+                  Kwota roczna z odzysku energii cieplnej
                 </label>
                 <div className="input-group mb-3">
                   <input
                     type="text"
                     disabled
                     className="form-control"
-                    aria-label="Wartość roczna odzysku energii cieplnej"
-                    aria-describedby="wartosc-roczna-odzysku-energii-cieplnej"
-                    id="wartosc-roczna-odzysku-energii-cieplnej"
-                    name="wartosc-roczna-odzysku-energii-cieplnej"
+                    aria-label="Kwota roczna z odzysku energii cieplnej"
+                    aria-describedby="kwota-roczna-z-odzysku-energii-cieplnej"
+                    id="kwota-roczna-z-odzysku-energii-cieplnej"
+                    name="kwota-roczna-z-odzysku-energii-cieplnej"
                   />
                   <div className="input-group-append">
-                    <span className="input-group-text">PLN/rok</span>
+                    <span className="input-group-text">PLN</span>
                   </div>
                 </div>
               </div>
@@ -420,21 +418,21 @@ export default class Calculator extends Component {
 
             <div className="form-row">
               <div className="col-md-12">
-                <label htmlFor="roczne-oszczednosci-z-odzysku-wod-poplucznych">
-                  Roczne oszczędności z odzysku wód popłucznych
+                <label htmlFor="suma-rocznych-oszczednosci">
+                  Suma rocznych oszczędności
                 </label>
                 <div className="input-group mb-3">
                   <input
                     type="text"
                     disabled
                     className="form-control"
-                    aria-label="Roczne oszczędności z odzysku wód popłucznych"
-                    aria-describedby="roczne-oszczednosci-z-odzysku-wod-poplucznych"
-                    id="roczne-oszczednosci-z-odzysku-wod-poplucznych"
-                    name="roczne-oszczednosci-z-odzysku-wod-poplucznych"
+                    aria-label="Suma rocznych oszczędności"
+                    aria-describedby="suma-rocznych-oszczednosci"
+                    id="suma-rocznych-oszczednosci"
+                    name="suma-rocznych-oszczednosci"
                   />
                   <div className="input-group-append">
-                    <span className="input-group-text">PLN/rok</span>
+                    <span className="input-group-text">PLN</span>
                   </div>
                 </div>
               </div>

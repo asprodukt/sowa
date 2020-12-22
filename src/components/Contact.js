@@ -39,17 +39,15 @@ export default class Contact extends Component {
             <div className="container ml-md-5">
               <div className="row ml-md-5">
                 <div className="col-12">
-                  <h1>Kontakt</h1>
-                  <a href="tel: +48 690 009 235">+48 690 009 235</a>
-                  <br />
-                  <a href="mailto: kontakt@sowa.expert">kontakt@sowa.expert</a>
-                </div>
-                <div className="col-12">
                   <h1>Adres Biura</h1>
                   <p>
                     Zajezierze 5C
                     <br />
                     88-140 Gniewkowo
+                    <br />
+                    <a href="mailto: kontakt@sowa.expert">
+                      kontakt@sowa.expert
+                    </a>
                   </p>
                 </div>
                 <div className="col-12">
@@ -61,7 +59,7 @@ export default class Contact extends Component {
                   </p>
                 </div>
                 <div className="col-12">
-                  <h1>Przedstawiciele</h1>
+                  <h1>Kontakt</h1>
                   <div className="mt-3" id="brandManager">
                     <h3>Wojciech Poćwiardowski</h3>
                     <a href="mailto: w.pocwiardowski@sowa.expert">
