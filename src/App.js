@@ -18,9 +18,8 @@ import Kontakt from "./pages/Kontakt";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
-        <ScrollToTop />
-        {/* <Navbar /> */}
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/polityka-prywatnosci" component={PrivacyPolicy} />
@@ -41,7 +40,6 @@ function App() {
           <Route exact path="/galeria" component={Galeria} />
           <Route component={HomePage} />
         </Switch>
-        {/* <Footer /> */}
       </div>
     </Router>
   );

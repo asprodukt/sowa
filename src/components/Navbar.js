@@ -4,7 +4,7 @@ import Logo from "../icons/Logo";
 
 function Navbar() {
   return (
-    <div className="container-fluid py-3 pr-lg-5 Navbar bg-white">
+    <div className="container-fluid py-3 pr-lg-5 Navbar bg-white fixed-top">
       <nav className="navbar navbar-expand-md navbar-light bg-white">
         <Link to="/" className="navbar-brand">
           <Logo width="86px" />

@@ -29,7 +29,7 @@ export default class DaneTechniczne extends Component {
               <h1 className="text-primary">Dane techniczne</h1>
               <hr />
               <p>
-                S-O-W-A to innowacyjny układ uzdatniania wód popłucznych do
+                SOWA to innowacyjny układ uzdatniania wód popłucznych do
                 wykorzystania w instalacjach obiektów basenowych. Jest to
                 ekonomiczny i ekologiczny system wykorzystujący tuby filtracyjne
                 oczyszczające w spektrum nano- i ultrafiltracji. Układ
@@ -42,11 +42,11 @@ export default class DaneTechniczne extends Component {
               </p>
 
               <a href={SpektrumNanofiltracji} target="_blank" rel="noreferrer">
-                Spektrum nanofiltracji
+                Spektrum filtracji SOWA
               </a>
               <br />
               <a href={SchematNanofiltracji} target="_blank" rel="noreferrer">
-                Schemat nanofiltracji
+                Schemat technologiczny SOWA
               </a>
             </div>
           </div>
