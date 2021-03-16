@@ -14,6 +14,7 @@ import KalkulatorOszczednosci from "./pages/KalkulatorOszczednosci";
 import Galeria from "./pages/Galeria";
 import ScrollToTop from "./utils/ScrollToTop";
 import Kontakt from "./pages/Kontakt";
+import Brief from "./pages/Brief";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/brief" component={Brief} />
           <Route exact path="/polityka-prywatnosci" component={PrivacyPolicy} />
           <Route exact path="/dane-techniczne" component={DaneTechniczne} />
           <Route exact path="/finansowanie" component={Finansowanie} />

@@ -20,6 +20,7 @@
   "scripts": {
     "start": "react-scripts start & sass --watch scss/App.scss src/App.css --style compressed",
     "build": "react-scripts build",
+    "deploy": "rsync -a --delete build/ h816867@94.152.11.147:/home/users/h816867/public_html/sowa.expert/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

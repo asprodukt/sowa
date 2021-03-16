@@ -61,12 +61,6 @@ export function nufCalculate() {
     "suma-rocznych-oszczednosci"
   );
 
-  // const kosztyEksploatacyjne = document.getElementById("koszty-eksploatacyjne")! as HTMLInputElement;
-  // const miesieczneOplatyZaMedia = document.getElementById("miesieczne-oplaty-za-media")! as HTMLInputElement;
-  // const miesieczneOszczednosci = document.getElementById("miesieczne-oszczednosci")! as HTMLInputElement;
-  // const miesiecznaRataZaSystem = document.getElementById("miesieczna-rata-za-system")! as HTMLInputElement;
-  // const roznicaNaPlusMiesiecznie = document.getElementById("roznica-na-plus-miesiecznie")! as HTMLInputElement;
-
   var jednokrotneZuzycieWodyValue =
     ((Math.PI *
       Math.pow(+srednicaFiltra.value / 2000, 2) *

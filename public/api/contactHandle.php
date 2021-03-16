@@ -18,7 +18,7 @@ if($_POST) {
         die();
     }
 
-    $to = "kamil.koziol@asprodukt.com";
+    $to = "kontakt@sowa.expert";
     
     $headers = 
         'Content-Type: text/plain; charset=utf-8' . "\r\n" .
