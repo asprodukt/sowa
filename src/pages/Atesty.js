@@ -106,7 +106,7 @@ export default class Atesty extends Component {
                 <p>
                   Technologia SOWA – System Odzysku Wód AS PRODUKT została
                   zgłoszona do urzędu patentowego i został jej nadany numer
-                  P.435356.
+                  Wp.29474.
                 </p>
               </div>
             }
