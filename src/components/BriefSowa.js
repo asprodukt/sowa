@@ -996,7 +996,7 @@ export default class BriefSowa extends Component {
                     </button>
                   </div>
                   <div className="modal-body">
-                    <p>Dziękujemy za wiadomość.</p>
+                    <p>Dziękujemy.</p>
                   </div>
                   <div className="modal-footer">
                     <button
